@@ -19,6 +19,7 @@
 .contact-section_subheading {
     @include primaryFont(13.5);
     color: white;
+    margin-bottom: 20px;
 }
 
 .contact-section_column {
@@ -85,22 +86,28 @@
 .contact-section_button {
     background-color: $primaryColor;
     color: $secondaryColor;
+    border: 1px solid $primaryColor;
+    padding: 1.5px 5px;
+    margin: 0;
+}
+
+.contact-section_button-border {
     border: 1px solid $secondaryColor;
-    margin: 10px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15.5px;
+    width: 85%;
 }
 
 .contact-section_input {
     @include secondaryFont(8);
     text-transform: lowercase;
-    border-right: none;
-    margin-right: -3px;
-    padding: 3px 5px;
     width: 60%;
 }
 
 .contact-section_button {
-    border-left: none;
-    padding: 3px 5px;
     width: 20%;
 }
 
@@ -116,6 +123,10 @@
     right: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.contact-section_post {
+    cursor: pointer;
 }
 
 .contact-section_icon,

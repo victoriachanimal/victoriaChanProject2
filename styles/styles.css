@@ -765,7 +765,8 @@ header {
   font-size: 13.5px;
   font-size: 1.35rem;
   font-family: 'Montserrat', sans-serif;
-  color: white; }
+  color: white;
+  margin-bottom: 20px; }
 
 .contact-section_column {
   width: calc(33.3% - (100px / 3)); }
@@ -825,22 +826,34 @@ header {
 .contact-section_button {
   background-color: #1d1d1d;
   color: #f1f3f3;
+  border: 1px solid #1d1d1d;
+  padding: 1.5px 5px;
+  margin: 0; }
+
+.contact-section_button-border {
   border: 1px solid #f1f3f3;
-  margin: 10px 0; }
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 15.5px;
+  width: 85%; }
 
 .contact-section_input {
   font-size: 8px;
   font-size: 0.8rem;
   font-family: 'Open Sans', sans-serif;
   text-transform: lowercase;
-  border-right: none;
-  margin-right: -3px;
-  padding: 3px 5px;
   width: 60%; }
 
 .contact-section_button {
-  border-left: none;
-  padding: 3px 5px;
   width: 20%; }
 
 .contact-section_icon {
@@ -859,6 +872,9 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.contact-section_post {
+  cursor: pointer; }
 
 .contact-section_icon,
 .contact-section_button {
@@ -1195,10 +1211,9 @@ header {
   .contact-section .contact-section_input {
     font-size: 12px;
     font-size: 1.2rem;
-    font-family: 'Open Sans', sans-serif;
-    padding: 8px 15px; }
-  .contact-section .contact-section_button {
-    padding: 12px 10px 9.5px 10px; } }
+    font-family: 'Open Sans', sans-serif; }
+  .contact-section .contact-section_button-border {
+    margin: 15px auto; } }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {

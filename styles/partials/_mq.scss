@@ -431,11 +431,10 @@
 
         .contact-section_input {
             @include secondaryFont(12);
-            padding: 8px 15px;
         }
 
-        .contact-section_button {
-            padding: 12px 10px 9.5px 10px;
+        .contact-section_button-border {
+            margin: 15px auto;
         }
     }
     // END OF SECTION 9 (CONTACT) (max-width: 585px)
