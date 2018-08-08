@@ -1,0 +1,61 @@
+// SECTION 2 (CHOOSE US) STYLES
+// ( *note: this is part of MAIN SECTION)
+.choose-section {
+    background-color: $secondaryColor;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    padding: 30px 0;
+}
+
+.choose-section_column1, 
+.choose-section_column2 {
+    width: 50%;
+    justify-content: center;
+}
+
+.choose-section_column2 {
+    background: url(../assets/image-4.jpeg)center center;
+    background-color: $accentColor;
+    background-size: cover;
+    height: 100%;
+}
+
+.choose-section_heading {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.choose-section_subheading {
+    @include primaryFont(17.5);
+    text-transform: none;
+    margin: 0;
+}
+
+.choose-section_text {
+    color: $thirdColor;
+    text-align: left;
+    margin-top: 5px;
+
+}
+
+.choose-section_info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.choose-section_subcolumn1 {
+    width: calc(25% - (20px / 2));
+    margin-right: 20px;
+}
+
+.choose-section_subcolumn2 {
+    width: calc(75% - (20px / 2));
+}
+
+
+
+// END OF SECTION 2 (CHOOSE US) STYLES

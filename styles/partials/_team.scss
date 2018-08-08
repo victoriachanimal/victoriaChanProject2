@@ -1,0 +1,50 @@
+.team-section_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.team-section_member {
+    width: calc(33.3% - (40px / 3));
+    position: relative;
+    height: 100%;
+
+    &:hover .team-section_info {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.team-section_member--2 {
+    margin: 0 20px;
+}
+
+.team-section_info {
+    position: absolute;
+    display: none;
+    top: 0;
+	bottom: 0;
+	right: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+}
+
+.team-section_subheading,
+.team-section_text {
+    color: white;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    top: 35%;
+    right: 0;
+    left: 0;
+    letter-spacing: 0.5px;
+}
+
+.team-section_subheading {
+    text-transform: capitalize;
+}
+
+.team-section_text {
+    @include primaryFont(9.5);
+    text-transform: uppercase;
+}

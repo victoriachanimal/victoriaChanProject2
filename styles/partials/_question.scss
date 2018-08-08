@@ -1,0 +1,39 @@
+// SECTION 7 (QUESTION) STYLES
+// ( *note: this is part of MAIN SECTION, and part 1 of 2 Services Sections)
+
+.question-section {
+    background-color: $fourthColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.question-section_textarea {
+    display: block;
+    text-align: center; 
+}
+
+.question-section_textarea {
+    width: 100%;
+    background-color: $fourthColor;
+    border: 1px solid $primaryColor;
+    @include primaryFont(12.5);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.question-section_button {
+    margin-top: 25px;
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $accentColor;
+        color: $secondaryColor;
+    }
+}

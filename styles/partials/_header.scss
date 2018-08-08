@@ -1,0 +1,66 @@
+// HEADER STYLES
+
+header {
+    background: url(../assets/image-1.jpeg);
+    padding-top: 1px;
+    background-size: cover;
+    height: 95vh;
+}
+
+// Header Menu styles
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu_heading {
+    flex: 1 0 45%;
+}
+
+.header-menu_nav {
+    flex: 1 0 55%;
+}
+
+.header-menu_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu_point {
+    list-style: none;
+}
+
+.header-menu_link {
+    @include primaryFont(13.5);
+
+    &:hover {
+        color: $secondaryColor;
+    }
+}
+// end of Header Menu styles
+
+
+// Responsive Header Menu styles
+.header-menu_hamburger,
+.header-menu_responsive {
+    display: none;
+}
+// end of Responsive Header Menu styles
+
+
+// Header Content styles
+.header-content {
+    transform: translateY(95%);
+}
+
+.header-content_heading {
+    @include primaryFont(40);
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.header-content_subheading {
+    @include primaryFont(20);
+    margin-top: 0;
+}
+// end of Header Content styles

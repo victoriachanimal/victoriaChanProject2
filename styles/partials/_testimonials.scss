@@ -1,0 +1,56 @@
+// SECTION 4 (TESTIMONIALS) SECTION STYLES
+// ( *note: this is part of MAIN SECTION)
+.testimonials-section {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-section_heading {
+    color: $secondaryColor;
+}
+
+.testimonials-section_slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.testimonials-section_img {
+    width: 15%;
+}
+
+.testimonials-section_arrow {
+    width: 10%;
+    font-size: 25px;
+    color: $secondaryColor;
+    padding: 25px;
+    cursor: pointer;
+
+    &:hover {
+        color: $fourthColor;
+        transition: color 0.3s ease-in-out;
+    }
+}
+
+.testimonials-section_arrow:first-child {
+    padding-right: 40px;
+}
+
+.testimonials-section_content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.testimonials-section_text--italic {
+    font-style: italic;
+}
+
+
+
+
+// END OF SECTION 4 (TESTIMONIALS) SECTION STYLES

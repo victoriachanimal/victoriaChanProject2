@@ -1,0 +1,129 @@
+// ASIDE SECTION STYLES
+// SECTION 9 (CONTACT) STYLES
+
+.contact-section {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    padding: 25px 0 0 0;
+    position: relative;
+}
+
+.contact-section_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $thirdColor;
+}
+
+.contact-section_subheading {
+    @include primaryFont(13.5);
+    color: white;
+}
+
+.contact-section_column {
+    width: calc(33.3% - (100px / 3));
+}
+
+.contact-section_column:nth-child(2) {
+    margin: 0 50px;
+}
+
+.contact-section_point {
+    position: relative;
+    font-weight: 300;
+}
+
+.contact-section_point--email:before,
+.contact-section_point--phone:before,
+.contact-section_point--address:before {
+    font-family: 'Font Awesome\ 5 Free';
+    display: inline-block;
+    font-weight: 900;
+    font-size: 10px;
+    margin-right: 2.5px;
+}
+
+
+.contact-section_point--email:before {
+    content: "\f0e0";
+}
+
+.contact-section_point--phone:before {
+    content: "\f095";
+}
+
+.contact-section_point--address:before {
+    content: "\f3c5";
+}
+
+.contact-section_text {
+    text-align: left;
+}
+
+.contact-section_gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-section_post {
+    width: calc(25% - (24px / 4));
+    margin-bottom: 8px;
+}
+
+.contact-section_post--1,
+.contact-section_post--2,
+.contact-section_post--3,
+.contact-section_post--5,
+.contact-section_post--6,
+.contact-section_post--7 {
+    margin-right: 8px;
+}
+
+.contact-section_input,
+.contact-section_button {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+    margin: 10px 0;
+}
+
+.contact-section_input {
+    @include secondaryFont(8);
+    text-transform: lowercase;
+    border-right: none;
+    margin-right: -3px;
+    padding: 3px 5px;
+    width: 60%;
+}
+
+.contact-section_button {
+    border-left: none;
+    padding: 3px 5px;
+    width: 20%;
+}
+
+.contact-section_icon {
+    color: $thirdColor;
+    font-size: 15px;
+    padding: 10px 0;
+} 
+
+.contact-section_social {
+    position: absolute;
+    bottom: 1px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section_icon,
+.contact-section_button {
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: $fourthColor;
+    }
+}
+// END OF SECTION 9 (CONTACT STYLES)

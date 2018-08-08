@@ -1,0 +1,21 @@
+// SECTION 1 (WELCOME) STYLES 
+// ( *note: this is part of MAIN SECTION)
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-section_heading--highlight {
+    color: $accentColor;
+}
+
+.welcome-section_text {
+    color: $thirdColor;
+    margin-bottom: 20px;
+}
+
+.welcome-section_button {
+    color: $secondaryColor;
+}
+// END OF SECTION 1 (WELCOME) STYLES 

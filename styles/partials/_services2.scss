@@ -1,0 +1,79 @@
+// SECTION 6 (SERVICES 2) STYLES
+// ( *note: this is part of MAIN SECTION, and part 1 of 2 Services Sections)
+.services-section2_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.services-section2_card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40vh;
+    margin-bottom: 25px;
+}
+
+.services-section2_info,
+.services-section2_img {
+    width: 50%;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.services-section2_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    position: relative;
+}
+
+.services-section2_number {
+    display: none;
+}
+
+.services-section2_subheading {
+    display: flex; 
+    align-items: center;
+}
+
+.services-section2_subheading1::before,
+.services-section2_subheading2::before {
+    color: $secondaryColor;
+    @include primaryFont(65);
+    font-weight: 700;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+}
+
+.services-section2_subheading1::before {
+    content: '1.';
+    left: 40px;
+}
+
+.services-section2_subheading2::before {
+    content: '2.';
+    left: 45px;
+}
+
+
+.services-section2_img1 {
+    background: url(../assets/image-10.jpeg);
+    background-size: cover;
+}
+
+.services-section2_img2 {
+    background: url(../assets/image-11.jpeg);
+    background-size: cover;
+}
+
+.services-section2_text {
+    color: #5d5e5d;
+    padding: 15px 0;
+}
+
+// END OF SECTION 6 (SERVICES 2) STYLES

@@ -1,0 +1,40 @@
+// FOOTER STYLES
+.footer-menu {
+    background: $primaryColor;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu_heading,
+.footer-menu_link,
+.footer-menu_text {
+     color: $secondaryColor;
+}
+
+.footer-menu_heading {
+    @include primaryFont(20);
+    margin: 20px 0 15px 0;
+}
+
+.footer-content_list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-menu_link {
+    @include primaryFont(10);
+    padding: 15px;
+
+    &:hover {
+        color: $fourthColor;
+    }
+}
+
+
+// END OF FOOTER STYLES

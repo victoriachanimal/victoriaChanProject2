@@ -1,0 +1,506 @@
+// RESPONSIVE STYLES (MEDIA QUERIES)
+
+/* Portrait Tablet and Small Desktops */
+@media (max-width: 940px) {
+
+    // HEADER (max-width: 940px)
+    // Header Nav
+    .header-menu_nav {
+        display: none;
+    }
+    // end of Header Nav
+
+    // *** Header Responsive Menu ***
+    .header-menu_hamburger {
+        position: absolute;
+		top: 0px; 
+		right: 80px;
+        cursor: pointer;
+        
+        &:hover {
+            color: $secondaryColor;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+
+    .header-menu_hamburger {
+        display: block;
+        font-size: 25px;
+    }
+
+    .header-menu_exit {
+        display: block;
+        font-size: 30px;
+    }
+
+    .show.header-menu_responsive {
+        display: block;
+    }
+
+    .header-menu_responsive {
+        display: none;
+		position: fixed;
+        z-index: 20;
+		top: 0;
+		left: 60%;
+		right: 0;
+		bottom: 0;
+		background: rgba(255, 255, 255, 0.96);
+    }
+
+    .header-menu_responsive-heading {
+        @include primaryFont(30);
+        text-align: center;
+        margin-bottom: 10px;
+        display: none;
+    }
+
+    .header-menu_responsive-list {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+
+    .header-menu_responsive-link {
+         @include primaryFont(25);
+
+         &:hover {
+            color: $fourthColor;
+			transition: color 0.3s ease-in-out;
+         }
+    }
+
+    .header-menu_responsive-social {
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        border-top: 2.5px solid $primaryColor;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .header-menu_social-link {
+         padding: 10px;
+
+         &:hover {
+            color: $fourthColor;
+			transition: color 0.3s ease-in-out;
+         }
+    }
+
+    .header-menu_social-point {
+        list-style: none;
+    }
+  
+
+    .header-menu_exit {
+		position: absolute;
+		top: 10px;
+		right: 60px;
+		cursor: pointer;
+		&:hover {
+			color: $fourthColor;
+			transition: color 0.3s ease-in-out;
+		}
+	}
+    // END OF HEADER (max-width: 940px)
+
+    // SECTION 2 (CHOOSE US) (max-width: 940px)
+    .choose-section {
+
+        .choose-section_column1 {
+            width: 65%;
+        }
+
+        .column-section_column2 {
+            width: 35%;
+        }
+    }
+    // END OF SECTION 2 (CHOOSE US) (max-width: 940px)
+
+     // *SECTION 6 (SERVICES)* (max-width: 940px)
+    .services-section2 {
+
+        .services-section2_subheading1::before,
+        .services-section2_subheading2::before {
+            @include primaryFont(45);
+            top: 25px;
+        }
+
+        .services-section2_subheading2::before {
+            left: 25px;
+        }
+
+      
+        .services-section2_img {
+            height: 30vh;
+        }
+    }
+     // *END OF SECTION 6 (SERVICES)* (max-width: 940px)
+}
+// * END max-width 940px *
+
+
+/* Landscape Phone to Portrait Tablet */
+@media (max-width: 767px) {
+
+    // general styles (max-width: 767px)
+    .paragraph-small {
+        @include secondaryFont(14);
+    }
+    // end of general styles (max-width: 767px)
+
+    // HEADER (max-width: 767px)
+    .header-content {
+        transform: translateY(75%);
+    }
+    // END OF HEADER (max-width: 767px)
+
+    // *SECTION 2 (CHOOSE US) (max-width: 767px)* 
+    .choose-section {
+        height: 80vh;
+
+        .choose-section_column1 {
+            width: 70%;
+        }
+
+        .column-section_column2 {
+            width: 30%;
+        }
+    }
+    // *END OF SECTION 2 (CHOOSE US)* (max-width: 767px)
+
+    // *SECTION 3 (SERVICES) (max-width: 767px)*
+    .services-section {
+
+        .services-section_subheading {
+            @include primaryFont(20);
+        }
+
+        .services-section_card {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .services-section_point {
+            @include secondaryFont(12.5);
+        }
+    } 
+    // *END OF SECTION 3 (SERVICES)* (max-width: 767px)
+
+    // *SECTION 5 (PROJECTS) (max-width: 767px)*
+    .project-section {
+        .project-section_img {
+            width: 50%;
+            height: 40vh;
+        }
+    }
+    // *END OF SECTION 5 (PROJECTS)* (max-width: 767px)
+
+    // *SECTION 6 (SERVICES 2) (max-width: 767px)*
+    .services-section2 {
+
+        .services-section2_subheading2 {
+            padding-top: 35px;
+        }
+
+        .services-section2_number {
+            display: inline-block;
+            color: $secondaryColor;
+            @include primaryFont(40);
+            padding-right: 5px;
+        }
+
+        .services-section2_card {
+            margin-bottom: 50px;
+        }
+
+        .services-section2_img {
+            width: 25%;
+            height: 15vh;
+        }
+
+        .services-section2_info {
+            width: 75%;
+            padding: 10px 10px;
+        }
+
+        .services-section2_subheading1::before,
+        .services-section2_subheading2::before {
+            display: none;
+        }
+    }
+    // *END OF SECTION 6 (SERVICES)*
+
+    // SECTION 8 (TEAM) (max-width: 767px) 
+    .team-section {
+        .team-section_info {
+            display: block;
+            background: none;
+            position: relative;
+        }
+
+        .team-section_subheading,
+        .team-section_text {
+            color: $primaryColor;
+        }
+    }
+    // END OF SECTION 8 (TEAM) (max-width: 767px)
+
+    // SECTION 9 (CONTACT) (max-width 767px)
+    .contact-section {
+
+        .contact-section_subheading {
+            @include primaryFont(18);
+            margin-bottom: 20px;
+        }
+
+        .contact-section_point,
+        .contact-section_text {
+            @include secondaryFont(12);
+        }
+
+        .contact-section_point--email:before,
+        .contact-section_point--phone:before,
+        .contact-section_point--address:before {
+            margin-right: 6px;
+        }
+
+        .contact-section_column--contact,
+        .contact-section_column--about {
+            width: 50%;
+            margin: 0;
+        }
+
+        .contact-section_column--instagram {
+            width: 85%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .contact-section_icon {
+            font-size: 25px;
+        }
+
+        .contact-section_social {
+            right: 20px;
+        }
+    }
+    // END OF SECTION 9 (CONTACT) (max-width: 767px)
+
+    // FOOTER (max-width 767px)
+    .footer-menu {
+        .footer-menu_heading {
+            @include primaryFont(26.5);
+             margin: 25px 0 15px 0;
+        }
+
+        .footer-menu_link {
+            @include primaryFont(11.5);
+        }
+    }
+    // END OF FOOTER (max-width: 767px)
+}
+// * END max-width 767px *
+
+
+@media (max-width: 670px) {
+    // SECTION 2 (CHOOSE US) (max-width: 670px)
+     .choose-section {
+        height: 100vh;
+
+        .choose-section_column1 {
+            width: 100%;      
+        }
+        .choose-section_column2 {
+            display: none;
+        }
+
+        .choose-section_info {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .choose-section_heading, 
+        .choose-section_text {
+            text-align: center;
+        }
+
+        .choose-section_subcolumn2 {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    // END OF SECTION 2 (CHOOSE US) (max-width: 670px)
+
+    // SECTION 4 (TESTIMONIALS) (max-width: 670px)
+    .testimonials-section {
+        .testimonials-section_img {
+            width: 40%;
+        }
+    }
+    // END OF SECTION 4 (TESTIMONIALS)(max-width: 670px)
+}
+
+
+@media (max-width: 585px) {
+    // HEADER SECTION (max-width: 585px)
+    .header-menu_responsive {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+    }
+
+    .header-menu_responsive-heading {
+        display: block;
+    }
+
+    .header-menu_exit {
+		right: 40px;
+	}
+    // END OF HEADER SECTION (max-width: 585px)
+
+    .section-subheading {
+        @include primaryFont(22);
+    }
+
+    // SECTION 6 (SERVICES 2) (max-width: 585px)
+    .services-section2_container {
+
+        .services-section2_img {
+            display: none;
+        }
+
+        .services-section2_info {
+            width: 100%;
+            padding: 0;
+         }
+    }
+
+    // SECTION 8 (TEAM) (max-width: 585px)
+    .team-section {
+
+        .team-section_container {
+            flex-direction: column;
+        }
+
+        .team-section_member {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .team-section_text {
+            @include primaryFont(13.5);
+        }
+    }
+    // END OF SECTION 8 (TEAM) (max-width: 585px)
+
+    // SECTION 9 (CONTACT) (max-width: 585px) 
+    .contact-section {
+        .contact-section_subheading {
+            @include primaryFont(22);
+            margin-top: 20px;
+        }
+
+        .contact-section_point,
+        .contact-section_text {
+            @include secondaryFont(13.5);
+            text-align: center;
+        }
+
+        .contact-section_column--contact,
+        .contact-section_column--about,
+        .contact-section_column--instagram {
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-section_input {
+            @include secondaryFont(12);
+            padding: 8px 15px;
+        }
+
+        .contact-section_button {
+            padding: 12px 10px 9.5px 10px;
+        }
+    }
+    // END OF SECTION 9 (CONTACT) (max-width: 585px)
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    // HEADER (max-width: 480px)
+    header {
+        height: 70vh;
+    }
+
+    .header-menu_heading {
+        @include primaryFont(20);
+        margin-top: 25px;
+    }
+
+    .header-menu_hamburger {
+		top: 0px; 
+		right: 40px;
+    }
+
+    .header-content {
+        transform: translateY(65%);
+        text-align: center;
+    }
+
+    .header-content_subheading {
+        @include primaryFont(15);
+    }
+
+    // END OF HEADER (max-width: 480px)
+
+    // SECTION 2 (CHOOSE US) (max-width: 480px)
+    .choose-section {
+        .choose-section_heading {
+            padding-bottom: 10px;
+        }
+
+        .choose-section_img {
+            display: none;
+        }
+    }
+    // END OF SECTION 2 (CHOOSE US) (max-width: 480px)
+
+    // SECTION 3 (SERVICES) (max-width: 480px)
+    .services-section {
+        .services-section_card {
+            width: 100%;
+        }
+    }
+    // END OF SECTION 3 (SERVICES) (max-width: 480px)
+
+    // SECTION 5 (PROJECTS) (max-width: 480px)
+    .project-section {
+        .project-section_img {
+            width: 100%;
+            height: 40vh;
+        }
+
+        .project-section_info {
+            border: none;
+        }
+    }
+    // END OF SECTION 5 (PROJECTS) (max-width: 480px)
+
+    // SECTION 7 (QUESTION) STYLES (max-width 480px)
+    .question-section {
+        .question-section_textarea {
+            width: 80%;
+        }
+    }
+    // END OF SECTION 7 (QUESTION) (max-width: 480px)
+}
+// * END max-width 480px*

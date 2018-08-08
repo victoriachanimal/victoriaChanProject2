@@ -1,6 +1,47 @@
-@import "partials/setup";
-@import "partials/global";
-@import "partials/header";
-@import "partials/footer";
-@import "partials/mq";
+// *** List of all stylesheets:
+
+// SETUP STYLES
+@import "partials/_setup.scss";
+
+// GLOBAL STYLES
+@import "partials/_global.scss";
+
+// HEADER STYLES
+@import "partials/_header.scss";
+
+// MAIN SECTION STYLES
+// Section 1 (Welcome) styles
+@import "partials/_welcome.scss";
+
+// Section 2 (Choose Us) styles 
+@import "partials/_choose.scss";
+
+// Section 3 (Services) styles
+@import "partials/_services.scss";
+
+// Section 4 (Testimonials) styles
+@import "partials/_testimonials.scss";
+
+// Section 5 (Projects) styles
+@import "partials/_projects.scss";
+
+// Section 6 (Services 2) styles
+@import "partials/_services2";
+
+// Section 7 (Question) styles
+@import "partials/_question.scss";
+
+//Section 8 (Our Team) styles
+@import "partials/_team.scss";
+// END OF MAIN SECTION STYLES
+
+// ASIDE SECTION STYLES
+// Section 9 (Contact) styles
+@import "partials/_contact.scss";
+
+// FOOTER STYLES
+@import "partials/_footer.scss";
+
+// RESPONSIVE (MEDIA QUERIES) STYLES
+@import "partials/_mq.scss";
 
