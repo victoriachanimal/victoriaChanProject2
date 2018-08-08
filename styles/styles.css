@@ -334,7 +334,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   height: 60vh;
-  padding: 30px 0; }
+  padding: 0; }
 
 .choose-section_column1,
 .choose-section_column2 {
@@ -1051,11 +1051,27 @@ header {
     -ms-transform: translateY(75%);
     transform: translateY(75%); }
   .choose-section {
-    height: 80vh; }
+    height: 100vh; }
     .choose-section .choose-section_column1 {
-      width: 70%; }
-    .choose-section .column-section_column2 {
-      width: 30%; }
+      width: 100%; }
+    .choose-section .choose-section_column2 {
+      display: none; }
+    .choose-section .choose-section_info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%; }
+    .choose-section .choose-section_heading,
+    .choose-section .choose-section_text {
+      text-align: center; }
+    .choose-section .choose-section_subcolumn2 {
+      width: 100%;
+      margin-top: 20px; }
   .services-section .services-section_subheading {
     font-size: 20px;
     font-size: 2rem;
@@ -1134,28 +1150,6 @@ header {
     font-family: 'Montserrat', sans-serif; } }
 
 @media (max-width: 670px) {
-  .choose-section {
-    height: 100vh; }
-    .choose-section .choose-section_column1 {
-      width: 100%; }
-    .choose-section .choose-section_column2 {
-      display: none; }
-    .choose-section .choose-section_info {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      text-align: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 100%; }
-    .choose-section .choose-section_heading,
-    .choose-section .choose-section_text {
-      text-align: center; }
-    .choose-section .choose-section_subcolumn2 {
-      width: 100%;
-      margin-top: 20px; }
   .testimonials-section .testimonials-section_img {
     width: 40%; } }
 

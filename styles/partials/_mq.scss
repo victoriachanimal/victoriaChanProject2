@@ -2,7 +2,6 @@
 
 /* Portrait Tablet and Small Desktops */
 @media (max-width: 940px) {
-
     // HEADER (max-width: 940px)
     // Header Nav
     .header-menu_nav {
@@ -94,7 +93,6 @@
     .header-menu_social-point {
         list-style: none;
     }
-  
 
     .header-menu_exit {
 		position: absolute;
@@ -161,14 +159,30 @@
 
     // *SECTION 2 (CHOOSE US) (max-width: 767px)* 
     .choose-section {
-        height: 80vh;
+        height: 100vh;
 
         .choose-section_column1 {
-            width: 70%;
+            width: 100%;      
+        }
+        .choose-section_column2 {
+            display: none;
         }
 
-        .column-section_column2 {
-            width: 30%;
+        .choose-section_info {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .choose-section_heading, 
+        .choose-section_text {
+            text-align: center;
+        }
+
+        .choose-section_subcolumn2 {
+            width: 100%;
+            margin-top: 20px;
         }
     }
     // *END OF SECTION 2 (CHOOSE US)* (max-width: 767px)
@@ -308,36 +322,6 @@
 
 
 @media (max-width: 670px) {
-    // SECTION 2 (CHOOSE US) (max-width: 670px)
-     .choose-section {
-        height: 100vh;
-
-        .choose-section_column1 {
-            width: 100%;      
-        }
-        .choose-section_column2 {
-            display: none;
-        }
-
-        .choose-section_info {
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            width: 100%;
-        }
-
-        .choose-section_heading, 
-        .choose-section_text {
-            text-align: center;
-        }
-
-        .choose-section_subcolumn2 {
-            width: 100%;
-            margin-top: 20px;
-        }
-    }
-    // END OF SECTION 2 (CHOOSE US) (max-width: 670px)
-
     // SECTION 4 (TESTIMONIALS) (max-width: 670px)
     .testimonials-section {
         .testimonials-section_img {
@@ -373,6 +357,7 @@
     // END OF HEADER SECTION (max-width: 585px)
 
     // SECTION 2 (CHOOSE US) (max-width: 585px)
+
     .choose-section_heading {
         margin-bottom: 15px;
     }
@@ -411,6 +396,7 @@
 
     // SECTION 9 (CONTACT) (max-width: 585px) 
     .contact-section {
+
         .contact-section_subheading {
             @include primaryFont(22);
             margin-top: 20px;
