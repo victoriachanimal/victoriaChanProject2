@@ -349,6 +349,12 @@
 
 
 @media (max-width: 585px) {
+    // general styles
+    .section-subheading {
+        @include primaryFont(22);
+    }
+    // end of general styles
+
     // HEADER SECTION (max-width: 585px)
     .header-menu_responsive {
 		top: 0;
@@ -366,9 +372,11 @@
 	}
     // END OF HEADER SECTION (max-width: 585px)
 
-    .section-subheading {
-        @include primaryFont(22);
+    // SECTION 2 (CHOOSE US) (max-width: 585px)
+    .choose-section_heading {
+        margin-bottom: 15px;
     }
+    // END OF SECTION 2 (CHOOSE US) (max-width: 585px)
 
     // SECTION 6 (SERVICES 2) (max-width: 585px)
     .services-section2_container {
